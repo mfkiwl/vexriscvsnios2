@@ -2,7 +2,7 @@
 
 ## Nios2 configurations
 
-**Basic core configuration:**
+### Basic core configuration
 
 * Nios2f
 * tidly coupled instruction memory: 16kB
@@ -12,6 +12,20 @@
 * io region (non cached): 128 kB
 * no vectored interrupt controller
 * single periodic irq input shared by periodic timer and JTAG port for debugging
+
+#### Integer Arithmetic
+
+* Device Hardware: SRT Radix-2
+* Multiply implementation: 3 16-bit multipliers
+* Multiply extended implementation: 1 16-bit multiplier
+* Shift/Rotate implementation: Logik elements (pipelined)
+
+**cycle performance:** 
+
+* Multiply: 1 cycle
+* Extended Multiply 2 cycles
+* Shift/Rotate: 1 cycle
+* Divide: 35 cycles
 
 ## Nios2 FPGA footprints
 
