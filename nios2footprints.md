@@ -36,11 +36,25 @@
 | Quartus Prime Version           | 18.1.0 Build 625 09/12/2018 SJ Lite Edition |
 | Family                          | Cyclone V                                   |
 | Device                          | 5CSXFC6D6F31C6                              |
-| Logic utilization (in ALMs)     | 2,832 / 41,910 ( 7 % )                      |
-| Total registers                 | 4143                                        |
+| Logic utilization (in ALMs)     | 2,863 / 41,910 ( 7 % )                      |
+| Total registers                 | 4152                                        |
 | Total block memory bits         | 835,648 / 5,662,720 ( 15 % )                |
 | Total DSP Blocks                | 4 / 112 ( 4 % )                             |
 | Total PLLs                      | 1 / 15 ( 7 % )                              |
+
+|                                    |                                             |
+|------------------------------------|:--------------------------------------------|
+| Flow Status                        | Successful - Thu Jan 17 12:46:12 2019       |
+| Quartus Prime Version              | 18.1.0 Build 625 09/12/2018 SJ Lite Edition |
+| Family                             | Cyclone IV E                                |
+| Device                             | EP4CE75F23C7                                |
+| Total logic elements               | 6,507 / 75,408 ( 9 % )                      |
+|     Total combinational functions  | 5,943 / 75,408 ( 8 % )                      |
+|     Dedicated logic registers      | 3,834 / 75,408 ( 5 % )                      |
+| Total registers                    | 3834                                        |
+| Total memory bits                  | 835,648 / 2,810,880 ( 30 % )                |
+| Embedded Multiplier 9-bit elements | 8 / 400 ( 2 % )                             |
+| Total PLLs                         | 1 / 4 ( 25 % )                              |
 
 
 **2. Basic configuration with floating point**
@@ -73,10 +87,12 @@
 
 **1. Basic configuratuion without floating point**
 
+ * Cyclone V:
+
 |           |                 |                     |      |
 |-----------|-----------------|---------------------|------|
 | Fmax      | Restricted Fmax | Clock Name          | Note |
-| 98.59 MHz | 98.59 MHz       | altera_reserved_tck |      |
+| 103.28 MHz| 103.28 MHz      | altera_reserved_tck |      |
 
 **2. Basic configuration with floating point**
 
