@@ -75,19 +75,19 @@
 | Quartus Prime Version           | 18.1.0 Build 625 09/12/2018 SJ Lite Edition |
 | Family                          | Cyclone IV E                                |
 | Device                          | EP4CE75F23C7                                |
-| Total logic elements            | 8,946 / 75,408 ( 12 % )                     |
-|   Total combinational functions | 8,239 / 75,408 ( 11 % )                     |
+| Total logic elements            | 8,962 / 75,408 ( 12 % )                     |
+|   Total combinational functions | 8,235 / 75,408 ( 11 % )                     |
 |   Dedicated logic registers     | 4,519 / 75,408 ( 6 % )                      |
-| Total registers                 | 4719                                        |
+| Total registers                 | 4519                                        |
 | Total memory bits               | 851,552 / 2,810,880 ( 30 % )                |
 | Embedded Multiplier 9-bit elements | 18 / 400 ( 5 % )                         |
 | Total PLLs                      | 1 / 4 ( 25 % )                              |
 
 ## Nios2 FPGA max clock (85C Model)
 
-| Fmax      | Restricted Fmax | Clock Name          | Note       | FPU |
-|-----------|-----------------|---------------------|------------|-----|
-| 104.01 MHz| 104.01 MHz      | altera_reserved_tck | Cyclone IV |  no |
-| 103.28 MHz| 103.28 MHz      | altera_reserved_tck | Cyclone V  |  no |
-| 127.29 MHz| 127.29 MHz      | altera_reserved_tck | Cyclone IV | yes |
-| 104.53 MHz| 104.53 MHz      | altera_reserved_tck | Cyclone V  | yes |
+| Fmax      | Clock Name          | Note       | FPU |
+|-----------|---------------------|------------|-----|
+| 104.01 MHz| altera_reserved_tck | Cyclone IV |  no |
+| 103.28 MHz| altera_reserved_tck | Cyclone V  |  no |
+| 131.72 MHz| altera_reserved_tck | Cyclone IV | yes |
+| 104.53 MHz| altera_reserved_tck | Cyclone V  | yes |
