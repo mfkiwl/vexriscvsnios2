@@ -85,28 +85,9 @@
 
 ## Nios2 FPGA max clock (85C Model)
 
-**1. Basic configuratuion without floating point**
-
- * Cyclone V:
-
-|           |                 |                     |      |
-|-----------|-----------------|---------------------|------|
-| Fmax      | Restricted Fmax | Clock Name          | Note |
-| 103.28 MHz| 103.28 MHz      | altera_reserved_tck |      |
-
-**2. Basic configuration with floating point**
-
-  * Cyclone V:
-  
-|            |                 |                     |      |
-|------------|-----------------|---------------------|------|
-| Fmax       | Restricted Fmax | Clock Name          | Note |
-| 104.53 MHz | 104.53 MHz      | altera_reserved_tck |      |
-
-  * Cyclone IV:
-  
-|            |                 |                     |      |
-|------------|-----------------|---------------------|------|
-| Fmax       | Restricted Fmax | Clock Name          | Note |
-| 127.29 MHz | 127.29 MHz      | altera_reserved_tck |      |
-
+| Fmax      | Restricted Fmax | Clock Name          | Note       | FPU |
+|-----------|-----------------|---------------------|------------|-----|
+| 104.01 MHz| 104.01 MHz      | altera_reserved_tck | Cyclone IV |  no |
+| 103.28 MHz| 103.28 MHz      | altera_reserved_tck | Cyclone V  |  no |
+| 127.29 MHz| 127.29 MHz      | altera_reserved_tck | Cyclone IV | yes |
+| 104.53 MHz| 104.53 MHz      | altera_reserved_tck | Cyclone V  | yes |
