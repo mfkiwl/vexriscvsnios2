@@ -2,26 +2,43 @@
 
 ## Boards overview
 
-| Board          | FPGA       |Softcore CPU | Status           |
-|----------------|------------|-------------|------------------|
-| Terasic Sockit | Cyclone V  | Nios2 gen2  | ControlCore only |
-| propietary     | Cyclone IV | Nios2 gen2  | ControlCore only |
-| DE10 nano      | Cyclone IV | Nios2 gen2  | planned          |
-| Arty-7 35T     | Artix-7    | SiFive E310 | planned          |
-| Arty-7 35T     | Artix-7    | VexRiscV    | planned          |
+| Board          | FPGA       |Softcore CPU | Status           | ControlCore |
+|----------------|------------|-------------|------------------|-------------|
+| Terasic Sockit | Cyclone V  | Nios2 gen2  | ControlCore only | regular     |
+| propietary     | Cyclone IV | Nios2 gen2  | ControlCore only | regular     |
+| DE10 nano      | Cyclone IV | Nios2 gen2  | planned          | small       |
+| Arty-7 35T     | Artix-7    | SiFive E310 | planned          | ?           |
+| Arty-7 35T     | Artix-7    | VexRiscV    | planned          | ?           |
 
 ## Nios2 configurations
 
 ### Basic core configuration
 
+Due to limitation of some evaluation boards available memory there is a small ControlCore variant. But essentially the structure should else be the same in both configurations.
+
+**regular ControlCore**
+
 * Nios2f
-* tidly coupled instruction memory: 16kB
-* tidly coupled data memory: 16kB
+* tightly coupled instruction memory: 16kB
+* tightly coupled data memory: 16kB
+* on chip dual ported memory: 16kB
 * instruction cache: 2 kB
 * data cache: 2 kB
 * io region (non cached): 128 kB
 * no vectored interrupt controller
 * single periodic irq input shared by periodic timer and JTAG port for debugging
+
+**small ControllCore**
+
+Same as above, but:
+
+* tightly coupled instruction memory: 8kB
+* tightly coupled data memory: 4kB
+* on chip dual ported memory: 8kB
+* no instruction cache
+* no data cache
+
+If not otherwise noted, the results refer to the regular variant.
 
 #### Integer Arithmetic
 
@@ -93,11 +110,28 @@
 | Embedded Multiplier 9-bit elements | 18 / 400 ( 5 % )                         |
 | Total PLLs                      | 1 / 4 ( 25 % )                              |
 
+** small ControlCore**:
+
+|                                 |                                             |
+|-----------------------------------|:------------------------------------------|
+| Quartus Prime Version           | 18.1.0 Build 625 09/12/2018 SJ Lite Edition |
+| Family                          | Cyclone IV E                                |
+| Device                          | EP4CE22F17C6                                |
+| Total logic elements            | 8,096 / 22,320 ( 36 % )                     |
+|   Total combinational functions | 7,446 / 22,320 ( 33 % )                     |
+|   Dedicated logic registers     | 3,994 / 22,320 ( 18 % )                     |
+| Total registers                 | 3994                                        |
+| Total memory bits               | 455,712 / 608,256 ( 75 % )                  |
+| Embedded Multiplier 9-bit elements | 18 / 132 ( 14 % )                        |
+| Total PLLs                      | 1 / 4 ( 25 % )                              |
+
+
 ## Nios2 FPGA max clock (85C Model)
 
-| Fmax      | Clock Name          | Note       | FPU |
-|-----------|---------------------|------------|-----|
-| 104.01 MHz| altera_reserved_tck | Cyclone IV |  no |
-| 103.28 MHz| altera_reserved_tck | Cyclone V  |  no |
-| 131.72 MHz| altera_reserved_tck | Cyclone IV | yes |
-| 104.53 MHz| altera_reserved_tck | Cyclone V  | yes |
+| Fmax      | Clock Name          | Note       | FPU | Core variant |
+|-----------|---------------------|------------|-----|--------------|
+| 104.01 MHz| altera_reserved_tck | Cyclone IV |  no | regular      |
+| 103.28 MHz| altera_reserved_tck | Cyclone V  |  no | regular      |
+| 131.72 MHz| altera_reserved_tck | Cyclone IV | yes | regular      |
+| 104.53 MHz| altera_reserved_tck | Cyclone V  | yes | regular      |
+| 123.76 MHz| altera_reserved_tck | Cyclone IV | yes | small        |
