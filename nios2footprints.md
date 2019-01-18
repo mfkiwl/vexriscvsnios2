@@ -71,7 +71,6 @@ If not otherwise noted, the results refer to the regular variant.
 
 |                                    |                                             |
 |------------------------------------|:--------------------------------------------|
-| Flow Status                        | Successful - Thu Jan 17 12:46:12 2019       |
 | Quartus Prime Version              | 18.1.0 Build 625 09/12/2018 SJ Lite Edition |
 | Family                             | Cyclone IV E                                |
 | Device                             | EP4CE75F23C7                                |
@@ -81,6 +80,21 @@ If not otherwise noted, the results refer to the regular variant.
 | Total registers                    | 3834                                        |
 | Total memory bits                  | 835,648 / 2,810,880 ( 30 % )                |
 | Embedded Multiplier 9-bit elements | 8 / 400 ( 2 % )                             |
+| Total PLLs                         | 1 / 4 ( 25 % )                              |
+
+**small ControlCore**:
+
+|                                    |                                             |
+|------------------------------------|:--------------------------------------------|
+| Quartus Prime Version              | 18.1.0 Build 625 09/12/2018 SJ Lite Edition |
+| Family                             | Cyclone IV E                                |
+| Device                             | EP4CE22F17C6                                |
+| Total logic elements               | 5,778 / 22,320 ( 26 % )                     |
+|   Total combinational functions    | 5,301 / 22,320 ( 24 % )                     |
+|   Dedicated logic registers        | 3,387 / 22,320 ( 15 % )                     |
+| Total registers                    | 3387                                        |
+| Total memory bits                  | 439,808 / 608,256 ( 72 % )                  |
+| Embedded Multiplier 9-bit elements | 8 / 132 ( 6 % )                          |
 | Total PLLs                         | 1 / 4 ( 25 % )                              |
 
 
@@ -110,7 +124,7 @@ If not otherwise noted, the results refer to the regular variant.
 | Embedded Multiplier 9-bit elements | 18 / 400 ( 5 % )                         |
 | Total PLLs                      | 1 / 4 ( 25 % )                              |
 
-** small ControlCore**:
+**small ControlCore**:
 
 |                                 |                                             |
 |-----------------------------------|:------------------------------------------|
