@@ -1,5 +1,15 @@
 # VexRiscV vs. Nios2 benchmarks
 
+## Boards overview
+
+| Board          | FPGA       |Softcore CPU | Status           |
+|----------------|------------|-------------|------------------|
+| Terasic Sockit | Cyclone V  | Nios2 gen2  | ControlCore only |
+| propietary     | Cyclone IV | Nios2 gen2  | ControlCore only |
+| DE10 nano      | Cyclone IV | Nios2 gen2  | planned          |
+| Arty-7 35T     | Artix-7    | SiFive E310 | planned          |
+| Arty-7 35T     | Artix-7    | VexRiscV    | planned          |
+
 ## Nios2 configurations
 
 ### Basic core configuration
