@@ -89,14 +89,13 @@ If not otherwise noted, the results refer to the regular variant.
 | Quartus Prime Version              | 18.1.0 Build 625 09/12/2018 SJ Lite Edition |
 | Family                             | Cyclone IV E                                |
 | Device                             | EP4CE22F17C6                                |
-| Total logic elements               | 5,778 / 22,320 ( 26 % )                     |
-|   Total combinational functions    | 5,301 / 22,320 ( 24 % )                     |
-|   Dedicated logic registers        | 3,387 / 22,320 ( 15 % )                     |
-| Total registers                    | 3387                                        |
+| Total logic elements               | 5,643 / 22,320 ( 25 % )                     |
+|   Total combinational functions    | 5,163 / 22,320 ( 24 % )                     |
+|   Dedicated logic registers        | 3,309 / 22,320 ( 15 % )                     |
+| Total registers                    | 3309                                        |
 | Total memory bits                  | 439,808 / 608,256 ( 72 % )                  |
-| Embedded Multiplier 9-bit elements | 8 / 132 ( 6 % )                          |
+| Embedded Multiplier 9-bit elements | 8 / 132 ( 6 % )                             |
 | Total PLLs                         | 1 / 4 ( 25 % )                              |
-
 
 **2. Basic configuration with floating point**
 
@@ -131,10 +130,10 @@ If not otherwise noted, the results refer to the regular variant.
 | Quartus Prime Version           | 18.1.0 Build 625 09/12/2018 SJ Lite Edition |
 | Family                          | Cyclone IV E                                |
 | Device                          | EP4CE22F17C6                                |
-| Total logic elements            | 8,096 / 22,320 ( 36 % )                     |
-|   Total combinational functions | 7,446 / 22,320 ( 33 % )                     |
+| Total logic elements            | 8,113 / 22,320 ( 36 % )                     |
+|   Total combinational functions | 7,428 / 22,320 ( 33 % )                     |
 |   Dedicated logic registers     | 3,994 / 22,320 ( 18 % )                     |
-| Total registers                 | 3994                                        |
+| Total registers                 | 4240                                        |
 | Total memory bits               | 455,712 / 608,256 ( 75 % )                  |
 | Embedded Multiplier 9-bit elements | 18 / 132 ( 14 % )                        |
 | Total PLLs                      | 1 / 4 ( 25 % )                              |
@@ -148,4 +147,5 @@ If not otherwise noted, the results refer to the regular variant.
 | 103.28 MHz| altera_reserved_tck | Cyclone V  |  no | regular      |
 | 131.72 MHz| altera_reserved_tck | Cyclone IV | yes | regular      |
 | 104.53 MHz| altera_reserved_tck | Cyclone V  | yes | regular      |
-| 123.76 MHz| altera_reserved_tck | Cyclone IV | yes | small        |
+| 117.21 MHz| altera_reserved_tck | Cyclone IV |  no | small        |
+| 146.76 MHz| altera_reserved_tck | Cyclone IV | yes | small        |
