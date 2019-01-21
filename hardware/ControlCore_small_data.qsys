@@ -153,14 +153,6 @@
          type = "String";
       }
    }
-   element nios_custom_instr_floating_point_2_0
-   {
-      datum _sortIndex
-      {
-         value = "13";
-         type = "int";
-      }
-   }
    element performance_counter_0
    {
       datum _sortIndex
@@ -321,7 +313,7 @@
    version="18.1"
    enabled="1">
   <parameter name="allowInSystemMemoryContentEditor" value="false" />
-  <parameter name="autoInitializationFileName">ControlCore_small_data_controlcore_dp_mem</parameter>
+  <parameter name="autoInitializationFileName">$${FILENAME}_controlcore_dp_mem</parameter>
   <parameter name="blockType" value="AUTO" />
   <parameter name="copyInitFile" value="false" />
   <parameter name="dataWidth" value="32" />
@@ -443,7 +435,7 @@
   <parameter name="cpuArchRev" value="1" />
   <parameter name="cpuID" value="0" />
   <parameter name="cpuReset" value="false" />
-  <parameter name="customInstSlavesSystemInfo"><![CDATA[<info><slave name="nios_custom_instr_floating_point_2_0" baseAddress="224" addressSpan="16" clockCycleType="COMBINATORIAL" /><slave name="nios_custom_instr_floating_point_2_0_1" baseAddress="248" addressSpan="8" clockCycleType="VARIABLE" /></info>]]></parameter>
+  <parameter name="customInstSlavesSystemInfo" value="&lt;info/&gt;" />
   <parameter name="customInstSlavesSystemInfo_nios_a" value="&lt;info/&gt;" />
   <parameter name="customInstSlavesSystemInfo_nios_b" value="&lt;info/&gt;" />
   <parameter name="customInstSlavesSystemInfo_nios_c" value="&lt;info/&gt;" />
@@ -609,19 +601,6 @@
   <parameter name="userDefinedSettings" value="" />
  </module>
  <module
-   name="nios_custom_instr_floating_point_2_0"
-   kind="altera_nios_custom_instr_floating_point_2"
-   version="18.1"
-   enabled="1">
-  <parameter name="AUTO_DEVICE" value="EP4CE22F17C6" />
-  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="6" />
-  <parameter name="arithmetic_present" value="true" />
-  <parameter name="comparison_present" value="true" />
-  <parameter name="conversion_present" value="true" />
-  <parameter name="deviceFamily" value="Cyclone IV E" />
-  <parameter name="root_present" value="true" />
- </module>
- <module
    name="performance_counter_0"
    kind="altera_avalon_performance_counter"
    version="18.1"
@@ -641,7 +620,7 @@
    version="18.1"
    enabled="1">
   <parameter name="allowInSystemMemoryContentEditor" value="false" />
-  <parameter name="autoInitializationFileName">ControlCore_small_data_tcd_memory</parameter>
+  <parameter name="autoInitializationFileName">$${FILENAME}_tcd_memory</parameter>
   <parameter name="blockType" value="AUTO" />
   <parameter name="copyInitFile" value="false" />
   <parameter name="dataWidth" value="32" />
@@ -673,7 +652,7 @@
    version="18.1"
    enabled="1">
   <parameter name="allowInSystemMemoryContentEditor" value="false" />
-  <parameter name="autoInitializationFileName">ControlCore_small_data_tci_memory</parameter>
+  <parameter name="autoInitializationFileName">$${FILENAME}_tci_memory</parameter>
   <parameter name="blockType" value="AUTO" />
   <parameter name="copyInitFile" value="false" />
   <parameter name="dataWidth" value="32" />
@@ -897,24 +876,6 @@
    start="nios2_qsys.irq"
    end="controlcore_tick.irq">
   <parameter name="irqNumber" value="1" />
- </connection>
- <connection
-   kind="nios_custom_instruction"
-   version="18.1"
-   start="nios2_qsys.custom_instruction_master"
-   end="nios_custom_instr_floating_point_2_0.s1">
-  <parameter name="CIName">nios_custom_instr_floating_point_2_0</parameter>
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="224" />
- </connection>
- <connection
-   kind="nios_custom_instruction"
-   version="18.1"
-   start="nios2_qsys.custom_instruction_master"
-   end="nios_custom_instr_floating_point_2_0.s2">
-  <parameter name="CIName">nios_custom_instr_floating_point_2_0_1</parameter>
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="248" />
  </connection>
  <connection
    kind="reset"
