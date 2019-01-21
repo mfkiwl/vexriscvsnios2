@@ -63,8 +63,8 @@ If not otherwise noted, the results refer to the regular variant.
 | Quartus Prime Version           | 18.1.0 Build 625 09/12/2018 SJ Lite Edition |
 | Family                          | Cyclone V                                   |
 | Device                          | 5CSXFC6D6F31C6                              |
-| Logic utilization (in ALMs)     | 2,863 / 41,910 ( 7 % )                      |
-| Total registers                 | 4152                                        |
+| Logic utilization (in ALMs)     | 2,872 / 41,910 ( 7 % )                      |
+| Total registers                 | 4169                                        |
 | Total block memory bits         | 835,648 / 5,662,720 ( 15 % )                |
 | Total DSP Blocks                | 4 / 112 ( 4 % )                             |
 | Total PLLs                      | 1 / 15 ( 7 % )                              |
@@ -104,8 +104,8 @@ If not otherwise noted, the results refer to the regular variant.
 | Quartus Prime Version           | 18.1.0 Build 625 09/12/2018 SJ Lite Edition |
 | Family                          | Cyclone V                                   |
 | Device                          | 5CSXFC6D6F31C6                              |
-| Logic utilization (in ALMs)     | 3,827 / 41,910 ( 9 % )                      |
-| Total registers                 | 4861                                        |
+| Logic utilization (in ALMs)     | 3,958 / 41,910 ( 9 % )                      |
+| Total registers                 | 4916                                        |
 | Total block memory bits         | 851,552 / 5,662,720 ( 15 % )                |
 | Total DSP Blocks                | 8 / 112 ( 7 % )                             |
 | Total PLLs                      | 1 / 15 ( 7 % )                              |
@@ -143,9 +143,9 @@ If not otherwise noted, the results refer to the regular variant.
 
 | Fmax      | Clock Name          | Note       | FPU | Core variant |
 |-----------|---------------------|------------|-----|--------------|
+| 100.61 MHz| altera_reserved_tck | Cyclone V  |  no | regular      |
+|  96.4  MHz| altera_reserved_tck | Cyclone V  | yes | regular      |
 | 104.01 MHz| altera_reserved_tck | Cyclone IV |  no | regular      |
-| 103.28 MHz| altera_reserved_tck | Cyclone V  |  no | regular      |
-| 131.72 MHz| altera_reserved_tck | Cyclone IV | yes | regular      |
-| 104.53 MHz| altera_reserved_tck | Cyclone V  | yes | regular      |
 | 117.21 MHz| altera_reserved_tck | Cyclone IV |  no | small        |
+| 131.72 MHz| altera_reserved_tck | Cyclone IV | yes | regular      |
 | 146.76 MHz| altera_reserved_tck | Cyclone IV | yes | small        |
