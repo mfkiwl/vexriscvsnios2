@@ -6,7 +6,7 @@
 |----------------|------------|-------------|------------------|-------------|
 | Terasic Sockit | Cyclone V  | Nios2 gen2  | ControlCore only | regular     |
 | propietary     | Cyclone IV | Nios2 gen2  | ControlCore only | regular     |
-| DE10 nano      | Cyclone IV | Nios2 gen2  | planned          | small       |
+| DE10 nano      | Cyclone IV | Nios2 gen2  | full board design| small       |
 | Arty-7 35T     | Artix-7    | SiFive E310 | planned          | ?           |
 | Arty-7 35T     | Artix-7    | VexRiscV    | planned          | ?           |
 
@@ -82,17 +82,18 @@ If not otherwise noted, the results refer to the regular variant.
 | Embedded Multiplier 9-bit elements | 8 / 400 ( 2 % )                             |
 | Total PLLs                         | 1 / 4 ( 25 % )                              |
 
-**small ControlCore**:
+**small ControlCore** (DE10_nano):
 
 |                                    |                                             |
 |------------------------------------|:--------------------------------------------|
 | Quartus Prime Version              | 18.1.0 Build 625 09/12/2018 SJ Lite Edition |
 | Family                             | Cyclone IV E                                |
 | Device                             | EP4CE22F17C6                                |
-| Total logic elements               | 5,643 / 22,320 ( 25 % )                     |
-|   Total combinational functions    | 5,163 / 22,320 ( 24 % )                     |
+| Total logic elements               | 5,607 / 22,320 ( 25 % )                     |
+|   Total combinational functions    | 5,153 / 22,320 ( 24 % )                     |
 |   Dedicated logic registers        | 3,309 / 22,320 ( 15 % )                     |
 | Total registers                    | 3309                                        |
+| Total pins                         | 9 / 154 ( 6 % )                             |
 | Total memory bits                  | 439,808 / 608,256 ( 72 % )                  |
 | Embedded Multiplier 9-bit elements | 8 / 132 ( 6 % )                             |
 | Total PLLs                         | 1 / 4 ( 25 % )                              |
@@ -141,11 +142,11 @@ If not otherwise noted, the results refer to the regular variant.
 
 ## Nios2 FPGA max clock (85C Model)
 
-| Fmax      | Clock Name          | Note       | FPU | Core variant |
-|-----------|---------------------|------------|-----|--------------|
-| 100.61 MHz| altera_reserved_tck | Cyclone V  |  no | regular      |
-|  96.4  MHz| altera_reserved_tck | Cyclone V  | yes | regular      |
-| 104.01 MHz| altera_reserved_tck | Cyclone IV |  no | regular      |
-| 117.21 MHz| altera_reserved_tck | Cyclone IV |  no | small        |
-| 131.72 MHz| altera_reserved_tck | Cyclone IV | yes | regular      |
-| 146.76 MHz| altera_reserved_tck | Cyclone IV | yes | small        |
+| Fmax      | Clock Name          | Note       | FPU | Core variant | Board    |
+|-----------|---------------------|------------|-----|--------------|----------|
+| 100.61 MHz| altera_reserved_tck | Cyclone V  |  no | regular      |          |
+|  96.4  MHz| altera_reserved_tck | Cyclone V  | yes | regular      |          |
+| 104.01 MHz| altera_reserved_tck | Cyclone IV |  no | regular      |          |
+| 133.9  MHz| altera_reserved_tck | Cyclone IV |  no | small        | DE10_nano|
+| 131.72 MHz| altera_reserved_tck | Cyclone IV | yes | regular      |          |
+| 146.76 MHz| altera_reserved_tck | Cyclone IV | yes | small        |          |
