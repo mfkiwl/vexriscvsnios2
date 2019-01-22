@@ -177,7 +177,7 @@
   <parameter name="AUTO_SYSCLK_CLOCK_DOMAIN" value="1" />
   <parameter name="AUTO_SYSCLK_CLOCK_RATE" value="200000000" />
   <parameter name="AUTO_SYSCLK_RESET_DOMAIN" value="1" />
-  <parameter name="AUTO_UNIQUE_ID">$${FILENAME}_controlcore0_cpu</parameter>
+  <parameter name="AUTO_UNIQUE_ID">SingleAxisCore_controlcore0_cpu</parameter>
  </module>
  <module
    name="controller_dp_memories"
@@ -233,7 +233,7 @@
    version="18.1"
    enabled="1">
   <parameter name="allowInSystemMemoryContentEditor" value="false" />
-  <parameter name="autoInitializationFileName">$${FILENAME}_memory_pool</parameter>
+  <parameter name="autoInitializationFileName">SingleAxisCore_memory_pool</parameter>
   <parameter name="blockType" value="AUTO" />
   <parameter name="copyInitFile" value="false" />
   <parameter name="dataWidth" value="32" />
