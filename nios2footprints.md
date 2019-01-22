@@ -4,7 +4,7 @@
 
 | Board          | FPGA       |Softcore CPU | Status           | ControlCore |
 |----------------|------------|-------------|------------------|-------------|
-| Terasic Sockit | Cyclone V  | Nios2 gen2  | ControlCore only | regular     |
+| Terasic Sockit | Cyclone V  | Nios2 gen2  | full board design| regular     |
 | propietary     | Cyclone IV | Nios2 gen2  | ControlCore only | regular     |
 | DE10 nano      | Cyclone IV | Nios2 gen2  | full board design| small       |
 | Arty-7 35T     | Artix-7    | SiFive E310 | planned          | ?           |
@@ -82,9 +82,9 @@ If not otherwise noted, the results refer to the regular variant.
 | Embedded Multiplier 9-bit elements | 8 / 400 ( 2 % )                             |
 | Total PLLs                         | 1 / 4 ( 25 % )                              |
 
-**small ControlCore** (DE10_nano):
+**small ControlCore**:
 
-|                                    |                                             |
+|  DE10 nano                         |                                             |
 |------------------------------------|:--------------------------------------------|
 | Quartus Prime Version              | 18.1.0 Build 625 09/12/2018 SJ Lite Edition |
 | Family                             | Cyclone IV E                                |
@@ -100,13 +100,13 @@ If not otherwise noted, the results refer to the regular variant.
 
 **2. Basic configuration with floating point**
 
-|                                 |                                             |
+|    Terasic Sockit               |                                             |
 |---------------------------------|:--------------------------------------------|
 | Quartus Prime Version           | 18.1.0 Build 625 09/12/2018 SJ Lite Edition |
 | Family                          | Cyclone V                                   |
 | Device                          | 5CSXFC6D6F31C6                              |
-| Logic utilization (in ALMs)     | 3,958 / 41,910 ( 9 % )                      |
-| Total registers                 | 4916                                        |
+| Logic utilization (in ALMs)     | 3,975 / 41,910 ( 9 % )                      |
+| Total registers                 | 5119                                        |
 | Total block memory bits         | 851,552 / 5,662,720 ( 15 % )                |
 | Total DSP Blocks                | 8 / 112 ( 7 % )                             |
 | Total PLLs                      | 1 / 15 ( 7 % )                              |
@@ -145,8 +145,8 @@ If not otherwise noted, the results refer to the regular variant.
 | Fmax      | Clock Name          | Note       | FPU | Core variant | Board    |
 |-----------|---------------------|------------|-----|--------------|----------|
 | 100.61 MHz| altera_reserved_tck | Cyclone V  |  no | regular      |          |
-|  96.4  MHz| altera_reserved_tck | Cyclone V  | yes | regular      |          |
+| 120.0  MHz| sys_clk             | Cyclone V  | yes | regular      | Sockit   |
 | 104.01 MHz| altera_reserved_tck | Cyclone IV |  no | regular      |          |
-| 133.9  MHz| altera_reserved_tck | Cyclone IV |  no | small        | DE10_nano|
+| 140.0  MHz| sys_clk             | Cyclone IV |  no | small        | DE10_nano|
 | 131.72 MHz| altera_reserved_tck | Cyclone IV | yes | regular      |          |
 | 146.76 MHz| altera_reserved_tck | Cyclone IV | yes | small        |          |
