@@ -7,6 +7,6 @@ The purpose of this project is to compare footprint and hardware performance of 
 ## CurrentStatus:
 
 * Everything new and untested
-* complete board designs not yet done
+* complete board design of *DE10 nano* board for Cyclone IV footprints and fmax design checked. Can be used as reference with "small" *ControlCore* without FPU. Other boards yet to be done.
 * Memory footprints of *ControlCore* for Cyclone IV and Cyclone V are done. Only a physical sys_clk is connected yet. Note: since no peripheral logic is connected, some logic of the *ControlCore* may be eliminated by the design system. See actual data is [here](nios2footprints.md)
 
