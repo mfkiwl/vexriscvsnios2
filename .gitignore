@@ -1,3 +1,9 @@
 .qsys_edit
 .qsys_edit/filters.xml
 .qsys_edit/preferences.xml
+SingleCoreTest_DE10_nano_c4/db
+SingleAxisCore_small/
+SingleAxisCore_small.sopcinfo
+SingleCoreTest_DE10_nano_c4/incremental_db/
+SingleCoreTest_DE10_nano_c4/output_files/
+SingleCoreTest_DE10_nano_c4/simulation/
