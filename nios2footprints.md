@@ -105,9 +105,10 @@ If not otherwise noted, the results refer to the regular variant.
 | Quartus Prime Version           | 18.1.0 Build 625 09/12/2018 SJ Lite Edition |
 | Family                          | Cyclone V                                   |
 | Device                          | 5CSXFC6D6F31C6                              |
-| Logic utilization (in ALMs)     | 3,975 / 41,910 ( 9 % )                      |
-| Total registers                 | 5119                                        |
+| Logic utilization (in ALMs)     | 4064 / 41,910 ( 10 % )                      |
+| Total registers                 | 5218                                        |
 | Total block memory bits         | 851,552 / 5,662,720 ( 15 % )                |
+| Total pins                      |                                             |
 | Total DSP Blocks                | 8 / 112 ( 7 % )                             |
 | Total PLLs                      | 1 / 15 ( 7 % )                              |
 
