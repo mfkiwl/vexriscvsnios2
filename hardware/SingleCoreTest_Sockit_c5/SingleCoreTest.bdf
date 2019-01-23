@@ -246,3 +246,13 @@ refer to the applicable agreement for further details.
 	(pt 200 256)
 	(bus)
 )
+(connector
+	(text "tick" (rect 922 200 940 213)(font "Intel Clear" ))
+	(pt 912 216)
+	(pt 976 216)
+)
+(connector
+	(text "tick" (rect 474 200 492 213)(font "Intel Clear" ))
+	(pt 528 216)
+	(pt 464 216)
+)
