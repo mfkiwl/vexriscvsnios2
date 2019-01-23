@@ -7,3 +7,10 @@ SingleAxisCore_small.sopcinfo
 SingleCoreTest_DE10_nano_c4/incremental_db/
 SingleCoreTest_DE10_nano_c4/output_files/
 SingleCoreTest_DE10_nano_c4/simulation/
+SingleCoreTest_Sockit_c5/db/
+SingleAxisCore.sopcinfo
+SingleAxisCore_DE10nano_C4.sopcinfo
+SingleAxisCore_c4.sopcinfo
+ControlCore_small_data.sopcinfo
+SingleCoreTest_Sockit_c5/incremental_db/
+SingleCoreTest_Sockit_c5/output_files/

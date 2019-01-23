@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file path="PLL_Sockit_sim/PLL_Sockit.vo" type="VERILOG" />
+ <topLevel name="PLL_Sockit" />
+ <deviceFamily name="cyclonev" />
+</simPackage>
