@@ -151,3 +151,16 @@ If not otherwise noted, the results refer to the regular variant.
 | 140.0  MHz| sys_clk             | Cyclone IV |  no | small        | DE10_nano|
 | 131.72 MHz| altera_reserved_tck | Cyclone IV | yes | regular      |          |
 | 146.76 MHz| altera_reserved_tck | Cyclone IV | yes | small        |          |
+
+## Dhrystone benchmarks (Preliminary collection)
+## Boards overview
+
+| Board          | FPGA       |Softcore CPU | Status     | Dhrystones/MHz | DMIPS/MHz | core freq. |
+|----------------|------------|-------------|------------|----------------|-----------|------------|
+| Terasic Sockit | Cyclone V  | Nios2 gen2  | TODO       |                |           |            |
+| propietary     | Cyclone IV | Nios2 gen2  | TODO       |                |           |            |
+| DE10 nano      | Cyclone IV | Nios2 gen2  | TODO       |                |           |            |
+| Arty-7 35T     | Artix-7    | SiFive E31  | *)         | 3017           |   1.72    |    65 MHz  |
+| Arty-7 35T     | Artix-7    | VexRiscV    | planned    |                |           |            |
+
+*) based on sifive_coreip_E31_FPGA_Evaluation_v19_02
