@@ -152,8 +152,8 @@ If not otherwise noted, the results refer to the regular variant.
 | 131.72 MHz| altera_reserved_tck | Cyclone IV | yes | regular      |          |
 | 146.76 MHz| altera_reserved_tck | Cyclone IV | yes | small        |          |
 
+
 ## Dhrystone benchmarks (Preliminary collection)
-## Boards overview
 
 | Board          | FPGA       |Softcore CPU | Status     | Dhrystones/MHz | DMIPS/MHz | core freq. |
 |----------------|------------|-------------|------------|----------------|-----------|------------|
