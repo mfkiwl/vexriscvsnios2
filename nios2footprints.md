@@ -160,7 +160,9 @@ If not otherwise noted, the results refer to the regular variant.
 | Terasic Sockit | Cyclone V  | Nios2 gen2  | TODO       |                |           |            |
 | propietary     | Cyclone IV | Nios2 gen2  | TODO       |                |           |            |
 | DE10 nano      | Cyclone IV | Nios2 gen2  | TODO       |                |           |            |
-| Arty-7 35T     | Artix-7    | SiFive E31  | *)         | 3017           |   1.72    |    65 MHz  |
+| Arty-7 35T     | Artix-7    | SiFive E31  | 1)         | 3017           |   1.72    |    65 MHz  |
+| Arty-7 35T     | Artix-7    | SiFive E31  | 2)         | 2959           |   1.68    |    65 MHz  |
 | Arty-7 35T     | Artix-7    | VexRiscV    | planned    |                |           |            |
 
-*) based on sifive_coreip_E31_FPGA_Evaluation_v19_02
+1) based on sifive_coreip_E31_FPGA_Evaluation_v19_02. Dhrystone v 2.1 benchmark compiled with gcc 8.1.0 -O3
+2)  gcc 8.1.0 -O2
